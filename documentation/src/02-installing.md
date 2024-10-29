@@ -17,6 +17,7 @@ $ npm install filecoin.js
 // or
 $ yarn add filecoin.js
 ```
+
 **Step 2:** Import module using node.js require or ES6 synthax
 
 ```javascript
@@ -27,7 +28,7 @@ import * as filecoin from "filecoin.js";
 
 ## Browser
 
-For using Filecoin.js library in broswer, include the core library in your HTML file and you're ready to go!
+For using Filecoin.js library in browser, include the core library in your HTML file and you're ready to go!
 
 ```html
 <script type="text/javascript" src="https://unpkg.com/filecoin.js"></script>
