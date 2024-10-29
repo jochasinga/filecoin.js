@@ -11,15 +11,17 @@ Node JavaScript/TypeScript:
 ```javascript
 import { HttpJsonRpcConnector, LotusClient } from 'filecoin.js';
 
-(async () => {
-
-  const httpConnector = new HttpJsonRpcConnector({ url: __LOTUS_HTTP_RPC_ENDPOINT__, token: __LOTUS_AUTH_TOKEN__ });
-
+async function helloFilecoinJs() {
+  const httpConnector = new HttpJsonRpcConnector({
+    url: __LOTUS_HTTP_RPC_ENDPOINT__,
+    token: __LOTUS_AUTH_TOKEN__
+  });
   const lotusClient = new LotusClient(httpConnector);
   const version = await lotusClient.common.version();
-  console.log(version);
+  console.log(`Hello, Filecoin.js v${version}`);
+}
 
-})().then().catch();
+await helloFilecoinJs();
 ```
 
 Browser:
